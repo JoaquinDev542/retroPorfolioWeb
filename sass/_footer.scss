@@ -1,0 +1,55 @@
+.footerContent {
+    border-right: 2px solid var(--clr-border);
+    border-bottom: 2px solid var(--clr-border);
+    border-left: 2px solid var(--clr-border);
+
+    &__link {
+        display: block;
+        height:clamp(3.125rem , 5vw , 6.25rem);
+        line-height: clamp(3.125rem , 5vw , 6.25rem);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: clamp(1.3125rem , 3vw , 4rem);
+        border-bottom: 2px solid var(--clr-border);
+        transition: var(--transitionClr);
+        &:hover {
+            color: var(--clr-blue);
+        }
+    }
+
+}
+
+.footerContentParagraph {
+    &__paragraph {
+        text-align: center;
+        padding: 1rem;
+        @media screen and (min-width:768px){
+            padding: 0;
+        }
+        &--border {
+            border-top: 2px solid var(--clr-border);
+            padding: 1rem;
+            @media screen and (min-width:768px) {
+                border-top: none;
+                border-left: 2px solid var(--clr-border);
+            }
+        }
+    }
+
+    @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.footerContentParagraph__linkGithub {
+    text-decoration: underline;
+    transition: var(--transitionClr);
+    font-weight: 600;
+    &:hover {
+        color: var(--clr-blue);
+    }
+}

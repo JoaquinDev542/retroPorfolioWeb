@@ -1,0 +1,74 @@
+* , ::before , ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1750px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 5px;
+    font-family: var(--ff-paragraph);
+    color: var(--clr-principal);
+    background-image: url(../image/image/noisebg.jpeg);
+    @media screen and (min-width:768px){
+        padding: 20px;
+    }
+
+    @media screen and (min-width:1024px){
+        padding: 25px;
+    }
+
+    @media screen and (min-width:1440px){
+        padding: 35px;
+    }
+}
+
+::selection {
+    background-color: var(--clr-blue);
+    color: var(--clr-selected);
+}
+
+main {
+    overflow: hidden;
+}
+
+h2 , h3 {
+    font-family: var(--ff-title);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: clamp(2.1875rem , 5vw , 6rem);
+}
+
+h3 {
+    font-size: clamp(2rem , 3vw , 4.5rem);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    font-family: var(--ff-paragraph);
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-principal);
+}
+
+span {
+    display: block;
+}

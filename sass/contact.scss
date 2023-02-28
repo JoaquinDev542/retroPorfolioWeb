@@ -1,0 +1,50 @@
+@use '../sass/variables';
+@use '../sass/general';
+@use '../sass/header';
+@use '../sass/footer';
+
+.main {
+    border-left: 2px solid var(--clr-border);
+    border-right: 2px solid var(--clr-border);
+    @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.contactContentInfo {
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1.25rem , 5vw , 2.5rem);
+}
+
+.contactContentLinks {
+    display: grid;
+    border-top: 2px solid var(--clr-border);
+    grid-template-columns: repeat(2 , 1fr);
+    text-align: center;
+    border-bottom: 2px solid var(--clr-border);
+    @media screen and (min-width:768px){
+        border-bottom: none;
+    }
+
+    &__link {
+        padding: 1rem;
+        font-weight: 600;
+
+        &--border {
+            border-right: 2px solid var(--clr-border);
+        }
+    }
+}
+
+.form {
+    padding: clamp(1.25rem , 5vw , 2.5rem);
+    @media screen and (min-width:768px){
+        border-left: 2px solid var(--clr-border);
+    }
+}
+
+.footerContent__link {
+    border-top: 2px solid var(--clr-border);
+}
