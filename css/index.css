@@ -297,11 +297,6 @@ span {
   color: var(--clr-blue);
 }
 
-.heroAndSkill {
-  border-right: 2px solid var(--clr-border);
-  border-bottom: 2px solid var(--clr-border);
-  border-left: 2px solid var(--clr-border);
-}
 @media screen and (min-width: 768px) {
   .heroAndSkill {
     display: grid;
@@ -311,7 +306,6 @@ span {
 
 .hero {
   position: relative;
-  border-bottom: 2px solid var(--clr-border);
 }
 .hero__title {
   margin: 0;
@@ -327,6 +321,13 @@ span {
   gap: 16px;
   padding: clamp(1.25rem, 5vw, 2.5rem);
   text-align: center;
+  border-left: 2px solid var(--clr-border);
+  border-right: 2px solid var(--clr-border);
+}
+@media screen and (min-width: 768px) {
+  .heroContainer {
+    border-right: none;
+  }
 }
 @media screen and (min-width: 1024px) {
   .heroContainer {
@@ -352,15 +353,23 @@ span {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   transition: var(--transitionClr);
   font-weight: 600;
+  border-bottom: 2px solid var(--clr-border);
 }
 .heroSocialMedia__link:hover {
   color: var(--clr-blue);
 }
 .heroSocialMedia__link--cv {
+  border-left: 2px solid var(--clr-border);
   border-right: 2px solid var(--clr-border);
 }
 .heroSocialMedia__link--linkedin {
   border-left: 2px solid var(--clr-border);
+  border-right: 2px solid var(--clr-border);
+}
+@media screen and (min-width: 768px) {
+  .heroSocialMedia__link--linkedin {
+    border-right: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .heroSocialMedia {
@@ -375,6 +384,9 @@ span {
   flex-direction: column;
   gap: 1rem;
   padding: clamp(1.25rem, 5vw, 2.5rem);
+  border-right: 2px solid var(--clr-border);
+  border-bottom: 2px solid var(--clr-border);
+  border-left: 2px solid var(--clr-border);
 }
 @media screen and (min-width: 768px) {
   .skills {
@@ -588,6 +600,39 @@ span {
 .work__link:hover {
   color: var(--clr-blue);
 }
+.work__paragraph--margin {
+  margin-top: 55px;
+}
+
+.workImg {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  border: 2px solid var(--clr-border);
+  border-radius: 20px;
+  box-shadow: 5px 5px var(--clr-border);
+  background-image: url(../image/image/retroPorfolioWeb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.workImg__mobile {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 150px;
+  bottom: -45.5px;
+  right: -37.5px;
+  border-radius: 20px;
+  border: 2px solid var(--clr-border);
+  box-shadow: 5px 5px var(--clr-border);
+  z-index: 10;
+  background-image: url(../image/image/retroPorfolioWebMobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .work--first {
   border-bottom: 2px solid var(--clr-border);
@@ -636,4 +681,3 @@ span {
 }
 
 /*# sourceMappingURL=index.css.map */
-
