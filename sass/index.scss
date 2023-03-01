@@ -238,6 +238,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: var(--clr-border);
     z-index: -1;
     &__mobile {
         position: absolute;
