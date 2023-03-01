@@ -9,62 +9,74 @@
     <link rel="stylesheet" href="../css/contact.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&amp;family=Roboto+Mono:wght@300;600&amp;display=swap" rel="stylesheet"/>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&amp;family=Roboto+Mono:wght@300;400&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="../js/contact.js"></script>
   </head>
   <body> 
-    <header class="header"> 
-      <div class="headerContainer"> 
-        <div class="logo"><a class="logo__link" href="../index.html" rel="tag" title="Logo de la Web de Joaquín García">JG</a></div>
-        <section class="headerContent">
-          <h1 class="headerContent__title">Joaquín García</h1><span class="headerContent__span">Desarrollador Web </span>
+    <div class="spinnerContainer">
+      <div class="spinnerContainer__son"></div>
+    </div>
+
+    <div class="content">
+
+      <header class="header"> 
+        <div class="headerContainer"> 
+          <div class="logo"><a class="logo__link" href="../index.html" rel="tag" title="Logo de la Web de Joaquín García">JG</a></div>
+          <section class="headerContent">
+            <h1 class="headerContent__title">Joaquín García</h1><span class="headerContent__span">Desarrollador Web </span>
+          </section>
+          <div class="headerSocialMedia"> <a class="headerSocialMedia__link" href="https://wa.me/34679829993" target="_blank" rel="external" title="Enlace que lleva a mi Whatsapp">Whatsapp</a><a class="headerSocialMedia__link" href="mailto:joaquingdeveloper@gmail.com" target="_blank" rel="external" title="Enlace que lleva a mi Gmail">Gmail</a></div>
+        </div>
+        <nav class="nav"> 
+          <ul class="navList"> 
+            <li class="navList__item navList__item--about"><a class="navList__link" href="../index.html#aboutContainer" rel="tag" title="Enlace que lleva a la sección de sobre mi">SOBRE MI</a></li>
+            <li class="navList__item navList__item--skills"><a class="navList__link" href="../index.html#heroAndSkill" rel="tag" title="Enlace que lleva a la sección de habilidades">HABILIDADES</a></li>
+            <li class="navList__item navList__item--works"><a class="navList__link" href="../index.html#works" rel="tag" title="Enlace que lleva a la sección de trabajos">TRABAJOS</a></li>
+            <li class="navList__item navList__item--contact"><a class="navList__link navList__link--width" href="contact.html" rel="tag" title="Enlace que lleva a la sección de contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main"> 
+        <section class="contactContent"> 
+          <div class="contactContentInfo">
+            <h2 class="contactContentInfo__title">CONTACTAME!</h2>
+            <p class="contactContentInfo__paragraph paragraph">¿Estás listo para transformar tus ideas en realidad?</p>
+            <p class="contactContentInfo__paragraph contactContentInfo__paragraph--margin paragraph">Si está interesado en trabajar juntos o simplemente quiere saber más sobre mi experiencia y habilidades en desarrollo web, no dude en contactarme. ¡Estoy emocionado de escuchar de usted!</p>
+          </div>
+          <div class="contactContentLinks">
+            <a class="contactContentLinks__link contactContentLinks__link--border" href="">Whatsapp</a>
+            <a class="contactContentLinks__link" href="">Gmail</a>
+          </div>
         </section>
-        <div class="headerSocialMedia"> <a class="headerSocialMedia__link" href="https://wa.me/34679829993" target="_blank" rel="external" title="Enlace que lleva a mi Whatsapp">Whatsapp</a><a class="headerSocialMedia__link" href="mailto:joaquingdeveloper@gmail.com" target="_blank" rel="external" title="Enlace que lleva a mi Gmail">Gmail</a></div>
-      </div>
-      <nav class="nav"> 
-        <ul class="navList"> 
-          <li class="navList__item navList__item--about"><a class="navList__link" href="../index.html#aboutContainer" rel="tag" title="Enlace que lleva a la sección de sobre mi">SOBRE MI</a></li>
-          <li class="navList__item navList__item--skills"><a class="navList__link" href="../index.html#heroAndSkill" rel="tag" title="Enlace que lleva a la sección de habilidades">HABILIDADES</a></li>
-          <li class="navList__item navList__item--works"><a class="navList__link" href="../index.html#works" rel="tag" title="Enlace que lleva a la sección de trabajos">TRABAJOS</a></li>
-          <li class="navList__item navList__item--contact"><a class="navList__link navList__link--width" href="contact.html" rel="tag" title="Enlace que lleva a la sección de contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main"> 
-      <section class="contactContent"> 
-        <div class="contactContentInfo">
-          <h2 class="contactContentInfo__title">CONTACTAME!</h2>
-          <p class="contactContentInfo__paragraph paragraph">¿Estás listo para transformar tus ideas en realidad?</p>
-          <p class="contactContentInfo__paragraph paragraph">Si está interesado en trabajar juntos o simplemente quiere saber más sobre mi experiencia y habilidades en desarrollo web, no dude en contactarme. ¡Estoy emocionado de escuchar de usted!</p>
+        <form class="form" action=""> 
+          <div class="formContainer formName">
+            <label class="formContainer__label formName__name" for="">Nombre:</label>
+            <input class="formContainer__input formName__name" type="text" placeholder="Joaquín">
+          </div>
+          <div class="formContainer formEmail">
+            <label class="formContainer__label formEmail__email" for="">Email:</label>
+            <input class="formContainer__input formEmail__email" type="email" placeholder="joaquingdeveloper@gmail.com">
+          </div>
+          <div class="formContainer formTextarea">
+            <label class="formContainer__label formTextareal__textarea" for=""> Cuentame que necesita de mi!</label>
+            <textarea class="formContainer__textarea" placeholder="Mensaje..."></textarea>
+          </div>
+          <button class="button">Enviar</button>
+        </form>
+      </main>
+
+      <footer class="footer"> 
+        <div class="footerContent"> <a class="footerContent__link" href="#" rel="tag" title="Enlace que lleva a la sección de inicio">Joaquín García</a>
+          <div class="footerContentParagraph"> 
+            <p class="footerContentParagraph__paragraph paragraph">Joaquín García 2023. Todos los derechos reservados.</p>
+            <p class="footerContentParagraph__paragraph footerContentParagraph__paragraph--border">Hecho por <a class="footerContentParagraph__linkGithub" href="https://github.com/JoaquinDev542" target="_blank" rel="external" title="Enlace que lleva a mi Github">Joaquín García.  </a></p>
+          </div>
         </div>
-        <div class="contactContentLinks">
-          <a class="contactContentLinks__link contactContentLinks__link--border" href="">Whatsapp</a>
-          <a class="contactContentLinks__link" href="">Gmail</a>
-        </div>
-      </section>
-      <form class="form" action=""> 
-        <div class="formName">
-          <label class="label formName__name" for="">Nombre:</label>
-          <input class="input formName__name" type="text" placeholder="Joaquín">
-        </div>
-        <div class="formEmail">
-          <label class="label formEmail__email" for="">Email:</label>
-          <input class="input formEmail__email" type="email" placeholder="joaquingdeveloper@gmail.com">
-        </div>
-        <div class="formTextarea">
-          <label class="label formTextareal__textarea" for=""> </label>
-          <textarea class="textarea" placeholder="Mensaje..."></textarea>
-        </div>
-        <button class="button">Enviar</button>
-      </form>
-    </main>
-    <footer class="footer"> 
-      <div class="footerContent"> <a class="footerContent__link" href="#" rel="tag" title="Enlace que lleva a la sección de inicio">Joaquín García</a>
-        <div class="footerContentParagraph"> 
-          <p class="footerContentParagraph__paragraph paragraph">Joaquín García 2023. Todos los derechos reservados.</p>
-          <p class="footerContentParagraph__paragraph footerContentParagraph__paragraph--border">Hecho por <a class="footerContentParagraph__linkGithub" href="https://github.com/JoaquinDev542" target="_blank" rel="external" title="Enlace que lleva a mi Github">Joaquín García.  </a></p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+
+    </div>
+    
   </body>
 </html>

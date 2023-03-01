@@ -8,7 +8,6 @@
   --clr-principal:#000000;
   --clr-border:#232020;
   --clr-blue:#26498d;
-  --clr-blueHover:rgba(37, 72, 141, 0.176);
   --clr-selected:#ffffff;
   --clr-body:#f3efee;
   --transitionClr:.2s color;
@@ -82,6 +81,7 @@ p {
   font-family: var(--ff-paragraph);
   line-height: 1.5;
   margin: 0;
+  font-weight: 400;
 }
 
 a {
@@ -362,13 +362,24 @@ span {
   }
 }
 
+.contactContent {
+  position: relative;
+}
+
 .contactContentInfo {
   display: grid;
   gap: 1rem;
   padding: clamp(1.25rem, 5vw, 2.5rem);
 }
+.contactContentInfo__paragraph--margin {
+  margin-bottom: 55px;
+}
 
 .contactContentLinks {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   display: grid;
   border-top: 2px solid var(--clr-border);
   grid-template-columns: repeat(2, 1fr);
@@ -383,18 +394,100 @@ span {
 .contactContentLinks__link {
   padding: 1rem;
   font-weight: 600;
+  transition: var(--transitionClr);
+}
+.contactContentLinks__link:hover {
+  color: var(--clr-blue);
 }
 .contactContentLinks__link--border {
   border-right: 2px solid var(--clr-border);
 }
 
 .form {
+  display: grid;
+  gap: 1.5rem;
   padding: clamp(1.25rem, 5vw, 2.5rem);
 }
 @media screen and (min-width: 768px) {
   .form {
     border-left: 2px solid var(--clr-border);
+    gap: 3rem;
   }
+}
+@media screen and (min-width: 1440px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "formName formEmail" "formTextarea formTextarea" "button button";
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.formContainer__label {
+  display: block;
+}
+.formContainer__input {
+  padding: 1rem;
+  border: none;
+  outline: 2px solid transparent;
+  transition: 0.3s outline;
+}
+.formContainer__input:focus {
+  outline: 2px solid var(--clr-blue);
+}
+.formContainer__textarea {
+  padding: 1rem 1rem 6rem 1rem;
+  resize: vertical;
+  min-height: 150.78px;
+  max-height: 300px;
+  border: none;
+  outline: 2px solid transparent;
+  transition: 0.3s outline;
+}
+.formContainer__textarea:focus {
+  outline: 2px solid var(--clr-blue);
+}
+
+@media screen and (min-width: 1440px) {
+  .formName {
+    grid-area: formName;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formEmail {
+    grid-area: formEmail;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formTextarea {
+    grid-area: formTextarea;
+  }
+}
+
+.button {
+  padding: 1rem 3rem;
+  background-color: var(--clr-blue);
+  border: 2px solid var(--clr-border);
+  color: var(--clr-selected);
+  justify-self: flex-start;
+  cursor: pointer;
+  transition: 0.3s background-color, 0.3s color;
+}
+@media screen and (min-width: 1440px) {
+  .button {
+    grid-area: button;
+  }
+}
+.button:hover {
+  color: var(--clr-blue);
+  background-color: transparent;
 }
 
 .footerContent__link {

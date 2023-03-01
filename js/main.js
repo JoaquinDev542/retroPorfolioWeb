@@ -14,4 +14,4 @@ setTimeout(function() {
     sr.reveal('.aboutExtra');
     sr.reveal('.aboutContent');
     sr.reveal('.works');
-}, 1500);
+}, 1200);
