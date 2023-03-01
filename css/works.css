@@ -8,6 +8,7 @@
   --clr-principal:#000000;
   --clr-border:#232020;
   --clr-blue:#26498d;
+  --clr-blueHover:rgba(37, 72, 141, 0.176);
   --clr-selected:#ffffff;
   --clr-body:#f3efee;
   --transitionClr:.2s color;
@@ -90,6 +91,59 @@ a {
 
 span {
   display: block;
+}
+
+.spinnerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-blue);
+}
+.spinnerContainer__son {
+  width: 20px;
+  height: 12px;
+  display: block;
+  margin: auto;
+  position: relative;
+  border-radius: 4px;
+  color: var(--clr-selected);
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader 0.6s 0.3s ease infinite alternate;
+}
+.spinnerContainer__son::before, .spinnerContainer__son::after {
+  content: "";
+  box-sizing: border-box;
+  width: 20px;
+  height: 12px;
+  background: currentColor;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  right: 110%;
+  animation: animloader 0.6s ease infinite alternate;
+}
+.spinnerContainer__son::after {
+  left: 110%;
+  right: auto;
+  animation-delay: 0.6s;
+}
+@keyframes animloader {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 48px;
+  }
+}
+
+.content {
+  display: none;
 }
 
 .headerContainer {

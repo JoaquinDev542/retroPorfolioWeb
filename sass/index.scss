@@ -212,6 +212,11 @@
         &:hover {
             color: var(--clr-blue);
         }
+
+        &:hover .workImg {
+            transition: .5s transform ;
+            transform: scale(1.02);
+        }
     }
 
     &__paragraph {

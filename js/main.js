@@ -1,6 +1,9 @@
-// Scroll Reveal
-const sr = ScrollReveal({
-    // distance: '50px',
+setTimeout(function() {
+    document.querySelector('.spinnerContainer').style.display = "none";
+    document.querySelector('.content').style.display = "block";
+  
+    // Scroll Reveal
+    const sr = ScrollReveal({
     duration: 1000,
     delay: 200
     });
@@ -11,4 +14,4 @@ const sr = ScrollReveal({
     sr.reveal('.aboutExtra');
     sr.reveal('.aboutContent');
     sr.reveal('.works');
-console.log("aaa");
+}, 1500);
