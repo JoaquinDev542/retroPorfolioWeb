@@ -232,7 +232,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "navList__item--about navList__item--skills navList__item--works" ". navList__item--contact . ";
+  grid-template-areas: "navList__item--about navList__item--skills navList__item--works" "navList__item--contact  navList__item--contact navList__item--contact  ";
   text-align: center;
   margin: 0;
   padding: 0;
@@ -669,12 +669,20 @@ span {
   border: 2px solid var(--clr-border);
   border-radius: 20px;
   box-shadow: 5px 5px var(--clr-border);
-  background-image: url(../image/image/retroPorfolioWeb.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--clr-border);
   z-index: -1;
+}
+.workImg--first {
+  background-image: url(../image/image/ancoCompany.png);
+}
+.workImg--second {
+  background-image: url(../image/image/retroPorfolioWeb.png);
+}
+.workImg--third {
+  background-image: url(../image/image/retroPorfolioWeb.png);
 }
 .workImg__mobile {
   position: absolute;
@@ -687,11 +695,19 @@ span {
   border: 2px solid var(--clr-border);
   box-shadow: 5px 5px var(--clr-border);
   z-index: 10;
-  background-image: url(../image/image/retroPorfolioWebMobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--clr-border);
+}
+.workImg__mobile--first {
+  background-image: url(../image/image/ancoCompanyMobile.png);
+}
+.workImg__mobile--second {
+  background-image: url(../image/image/retroPorfolioWebMobile.png);
+}
+.workImg__mobile--third {
+  background-image: url(../image/image/retroPorfolioWebMobile.png);
 }
 
 .work--first {
