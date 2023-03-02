@@ -11,4 +11,6 @@ setTimeout(function() {
     sr.reveal('.header');
     sr.reveal('.hero');
     sr.reveal('.main');
+    sr.reveal('.footer');
 }, 1200);
+
