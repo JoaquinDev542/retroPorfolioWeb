@@ -149,11 +149,6 @@
        border-bottom: none;
        border-right: 2px solid var(--clr-border);
     }
-
-    &__img {
-        object-fit: cover;
-        display: none;
-    }
 }
 
 .aboutContent {
@@ -239,13 +234,13 @@
     background-color: var(--clr-border);
     z-index: -1;
     &--first {
-        background-image: url(../image/image/ancoCompany.png);
+        background-image: url(../image/image/ancoCompany.jpeg);
     }
     &--second {
-        background-image: url(../image/image/retroPorfolioWeb.png);
+        background-image: url(../image/image/retroPorfolioWeb.jpeg);
     }
     &--third {
-        background-image: url(../image/image/retroPorfolioWeb.png);
+        background-image: url(../image/image/retroPorfolioWeb.jpeg);
     }
     &__mobile {
         position: absolute;
@@ -263,13 +258,13 @@
         background-size: contain;
         background-color: var(--clr-border);
         &--first {
-            background-image: url(../image/image/ancoCompanyMobile.png);
+            background-image: url(../image/image/ancoCompanyMobile.jpeg);
         }
         &--second {
-            background-image: url(../image/image/retroPorfolioWebMobile.png);
+            background-image: url(../image/image/retroPorfolioWebMobile.jpeg);
         }
         &--third {
-            background-image: url(../image/image/retroPorfolioWebMobile.png);
+            background-image: url(../image/image/retroPorfolioWebMobile.jpeg);
         }
 
     }

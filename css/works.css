@@ -375,16 +375,23 @@ span {
   padding: clamp(1.25rem, 5vw, 2.5rem);
   border-bottom: 2px solid var(--clr-border);
 }
+@media screen and (min-width: 768px) {
+  .contentMain {
+    gap: 2rem;
+  }
+}
 
 .contentImg {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .contentImg {
+    display: grid;
     gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
