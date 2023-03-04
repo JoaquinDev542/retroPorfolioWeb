@@ -380,6 +380,11 @@ span {
     gap: 2rem;
   }
 }
+.contentMain__span {
+  font-size: clamp(1.3125rem, 1.5vw, 2rem);
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
 .contentImg {
   display: flex;
