@@ -299,6 +299,17 @@ span {
   }
 }
 
+.navList--grid {
+  display: initial;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navList__itemGrid {
+    border-left: none;
+  }
+}
+
 .footerContent {
   border-right: 2px solid var(--clr-border);
   border-bottom: 2px solid var(--clr-border);

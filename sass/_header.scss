@@ -148,3 +148,15 @@
     }
 
 }
+
+// NAV IN INDEX(:not) FILES
+.navList--grid {
+    display: initial;
+    justify-content: center;
+}
+
+.navList__itemGrid {
+    @media screen and (min-width:768px) {
+        border-left:none;
+    }
+}
