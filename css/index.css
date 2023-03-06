@@ -28,7 +28,7 @@ body {
   padding: 5px;
   font-family: var(--ff-paragraph);
   color: var(--clr-principal);
-  background-image: url(../image/image/noisebg.jpeg);
+  background-image: url(../image/image/noisebg.webp);
 }
 @media screen and (min-width: 768px) {
   body {
@@ -689,10 +689,10 @@ span {
   z-index: -1;
 }
 .workImg--first {
-  background-image: url(../image/image/ancoCompany.jpeg);
+  background-image: url(../image/image/ancoCompany.webp);
 }
 .workImg--second {
-  background-image: url(../image/image/retroPorfolioWeb.jpeg);
+  background-image: url(../image/image/retroPorfolioWeb.webp);
 }
 .workImg__mobile {
   position: absolute;
@@ -711,10 +711,10 @@ span {
   background-color: var(--clr-border);
 }
 .workImg__mobile--first {
-  background-image: url(../image/image/ancoCompanyMobile.jpeg);
+  background-image: url(../image/image/ancoCompanyMobile.webp);
 }
 .workImg__mobile--second {
-  background-image: url(../image/image/retroPorfolioWebMobile.jpeg);
+  background-image: url(../image/image/retroPorfolioWebMobile.webp);
 }
 
 .work--first {
