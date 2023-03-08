@@ -50,18 +50,18 @@
             <a class="contactContentLinks__link" href="mailto:joaquingdeveloper@gmail.com" target="_blank" rel="external" title="Enlace que lleva a mi Gmail">Gmail</a>
           </div>
         </section>
-        <form class="form" action=""> 
+        <form class="form" action="../form.php" method="POST"> 
           <div class="formContainer formName">
             <label class="formContainer__label formName__name" for="">Nombre:</label>
-            <input class="formContainer__input formName__name" type="text" placeholder="Joaquín">
+            <input class="formContainer__input formName__name" name="name" type="text" placeholder="Joaquín">
           </div>
           <div class="formContainer formEmail">
             <label class="formContainer__label formEmail__email" for="">Email:</label>
-            <input class="formContainer__input formEmail__email" type="email" placeholder="joaquingdeveloper@gmail.com">
+            <input class="formContainer__input formEmail__email" name="email" type="email" placeholder="joaquingdeveloper@gmail.com">
           </div>
           <div class="formContainer formTextarea">
-            <label class="formContainer__label formTextareal__textarea" for=""> Cuentame que necesita de mi!</label>
-            <textarea class="formContainer__textarea" placeholder="Mensaje..."></textarea>
+            <label class="formContainer__label formTextarea__textarea" for=""> Cuentame que necesita de mi!</label>
+            <textarea class="formContainer__textarea" name="textarea" placeholder="Mensaje..."></textarea>
           </div>
           <button class="button">Enviar</button>
         </form>
